@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill the form, thank you.</p>
+        </header>
+
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                Name
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+
+            <label for="email" id="email-label">
+                Email
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+
+            <label for="number" id="number-label">
+                Age
+                <input type="number" id="number" placeholder="How old are you" min="15" max="40">
+            </label>
+
+            <label for="dropdown" id="dropdown-label">
+                Are you a fan of FC Barcelona?
+                <select id="dropdown">
+                    <option value="fan">Yes</option>
+                    <option value="not fan">No</option>
+                </select>
+            </label>
+
+            <label for="player">
+                Who is your favorite player
+                <div>
+                    <input type="radio" name="player-favorite" id="Aguero" value="Aguero">
+                    <label class="choice" for="Aguero">Aguero</label>
+                </div>
+                <div>
+                    <input type="radio" name="player-favorite" id="Memphis-Depay" value="Memphis-Depay">
+                    <label class="choice" for="Memphis-Depay">Memphis Depay</label>
+                </div>
+                <div>
+                    <input type="radio" name="player-favorite" id="Coutinho" value="Coutinho">
+                    <label class="choice" for="Coutinho">Coutinho</label>
+                </div>
+                <div>
+                    <input type="radio" name="player-favorite" id="Gerard-Pique" value="Gerard-Pique">
+                    <label class="choice" for="Gerard-Pique">Gerard Pique</label>
+                </div>
+            </label>
+
+            <label id="venue">
+                Where did you watch the FC Barcelona match
+                <div>
+                    <input type="checkbox" value="stadium" id="stadium">
+                    <label class="choice" for="stadium">Stadium</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="streaming" id="streaming">
+                    <label class="choice" for="streaming">Streaming</label>
+                </div>
+            </label>
+
+            <label for="comment" id="comment-label">
+                Any comments or suggestions?
+                <textarea  id="comment" cols="300" rows="100"></textarea>
+            </label>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
